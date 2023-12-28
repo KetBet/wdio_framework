@@ -12,6 +12,13 @@ export const config = {
     {
       browserName: "chrome",
       "goog:chromeOptions": {
+        args: [
+          "--no-sandbox",
+          "--disable-dev-shm-usage",
+          "--headless",
+          "--disable-infobars",
+          "--disable-gpu",
+        ],
       },
     },
   ],
