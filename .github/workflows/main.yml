@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      LOGIN_USERNAME: Katharina_Bernier
-      LOGIN_PASSWORD: s3cret
+      SIGNIN_USERNAME: Katharina_Bernier
+      SIGNIN_PASSWORD: s3cret
 
     steps:
       - name: Checkout
