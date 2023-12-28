@@ -1,7 +1,7 @@
 # WDIO_framework
 This repository contains simple automation test framework written with WebdriverIO and implements Page Object Model Pattern.
 
-This project requires [Node.js](https://nodejs.org/en/), (`npm`), (`yarn`) to be installed on your machine. 
+This project requires [Node.js](https://nodejs.org/en/), `npm`, `yarn` to be installed on your machine. 
 
 ## Steps 
 
