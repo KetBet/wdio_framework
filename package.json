@@ -1,0 +1,21 @@
+{
+  "name": "wdio_framework",
+  "type": "module",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@wdio/allure-reporter": "^8.27.0",
+    "@wdio/local-runner": "^8.27.0",
+    "@wdio/mocha-framework": "^8.27.0",
+    "@wdio/spec-reporter": "^8.27.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "wdio": "cross-env ENV=http://localhost:3000 wdio run ./wdio.conf.js",
+    "test:headless": "wdio run ./configs/wdio.headless.conf.js",
+    "test:chrome": "cross-env ENV=http://localhost:3000 wdio run ./configs/wdio.chrome.conf.js",
+    "test:firefox": "cross-env ENV=http://localhost:3000 wdio run ./configs/wdio.firefox.conf.js",
+    "report:generate": "npx allure generate allure-results --clean",
+    "report:open": "npx allure open allure-report"
+  }
+}
