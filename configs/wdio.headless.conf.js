@@ -17,7 +17,7 @@ export const config = {
           "--disable-dev-shm-usage",
           "--headless",
           "--disable-infobars",
-          "--disable-gpu",
+          "--disable-gpu"
         ],
       },
     },
