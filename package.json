@@ -11,7 +11,7 @@
     "dotenv": "^16.3.1"
   },
   "scripts": {
-    "wdio": "cross-env ENV=http://localhost:3000 wdio run ./wdio.conf.js",
+    "test": "cross-env ENV=http://localhost:3000 wdio run ./wdio.conf.js",
     "test:headless": "wdio run ./configs/wdio.headless.conf.js",
     "test:chrome": "cross-env ENV=http://localhost:3000 wdio run ./configs/wdio.chrome.conf.js",
     "test:firefox": "cross-env ENV=http://localhost:3000 wdio run ./configs/wdio.firefox.conf.js",
