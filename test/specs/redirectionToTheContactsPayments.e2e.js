@@ -11,7 +11,7 @@ describe("Redirection to the contacts payments list", () => {
     await loginPage.login(username, password);
   });
   it("should redirect to the contacts page", async () => {
-    await homePage.clickFriendaLink();
+    await homePage.clickFriendsLink();
     await expect(browser).toHaveUrl("http://localhost:3000/contacts");
   });
 });

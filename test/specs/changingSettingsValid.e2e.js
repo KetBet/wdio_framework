@@ -11,7 +11,7 @@ describe("Changing settings with valid data", () => {
     await loginPage.open();
     await loginPage.login(username, password);
   });
-  it("should change settings with valid data", async () => {
+  it("the save button should be enabled", async () => {
     await homePage.clickMyAccountLink();
     await expect(browser).toHaveUrl("http://localhost:3000/user/settings");
 

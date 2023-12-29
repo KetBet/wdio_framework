@@ -15,7 +15,7 @@ class HomePage extends Page {
     return $('//*[text()="Friends"]');
   }
 
-  clickFriendaLink() {
+  clickFriendsLink() {
     this.friendsLink.click();
   }
 

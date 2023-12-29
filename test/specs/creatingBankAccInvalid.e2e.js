@@ -25,7 +25,7 @@ describe("Creating Bank Account with invalid data", () => {
     await bankAccPage.inputRoutingNumber(
       faker.finance.routingNumber({ length: 9 })
     );
-    
+
     await expect(bankAccPage.saveBtn).toBeDisabled();
   });
 });
